@@ -1,8 +1,8 @@
 {
-  "name": "OSProject",
+  "name": "Expensify",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/choi2016/portfolio-project.git",
+  "repository": "https://github.com/choi2016/expensify.git",
   "author": "Edward Choi <edwardchoi.2011@gmail.com>",
   "license": "MIT",
   "scripts": {
