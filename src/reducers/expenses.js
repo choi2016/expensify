@@ -7,7 +7,6 @@ export default (state = expensesReducerDefaultState, action) => {
             return [
                 ...state,
                 action.expense
-                // state.concat(action.expense);
             ];
         case 'REMOVE_EXPENSE':
             return state.filter(({ id }) => id !== action.id);
