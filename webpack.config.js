@@ -23,6 +23,12 @@ module.exports = {
 		}]
 	},
 
+	resolveLoader: {
+		modules: [
+		  'node_modules'
+		]
+	},
+
 	devtool: 'cheap-module-evalsource-map',
 	
 	devServer: {
