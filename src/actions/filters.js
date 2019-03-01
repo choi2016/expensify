@@ -7,7 +7,6 @@ export const setTextFilter = (text = '') => ({
 // SORT_BY_DATE
 export const sortByDate = () => ({
     type: "SORT_BY_DATE"
-    // we don't add 'sortBy' because the value isn't dynamic
 });
 
 // SORT_BY_AMOUNT
