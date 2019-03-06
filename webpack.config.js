@@ -1,9 +1,9 @@
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const CSSExtract = new ExtractTextPlugin('styles.css');
 
 module.exports = (env) => {
 	const isProduction = env === 'production';
+	const CSSExtract = new ExtractTextPlugin('styles.css');
 
 	return {
 		entry: './src/app.js',
