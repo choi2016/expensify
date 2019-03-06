@@ -1,38 +1,42 @@
 const path = require('path');
 
-module.exports = {
-	entry: './src/app.js',
+module.exports = (env) => {
+	const isProduction = env === 'production';
 
-	output: {
-		path: path.join(__dirname, 'public'),
-		filename: 'bundle.js'
-	},
-
-	module: {
-		rules: [{
-			loaders: 'babel-loader',
-			test: /\.js$/,
-			exclude: /node_modules/
-		}, {
-			test: /\.s?css$/,
-			use: [
-				'style-loader',
-				'css-loader',
-				'sass-loader'
-			]
-		}]
-	},
-
-	resolveLoader: {
-		modules: [
-		  'node_modules'
-		]
-	},
-
-	devtool: 'cheap-module-evalsource-map',
+	return {
+		entry: './src/app.js',
 	
-	devServer: {
-		contentBase: path.join(__dirname, 'public'),
-		historyApiFallback: true	
-	}
+		output: {
+			path: path.join(__dirname, 'public'),
+			filename: 'bundle.js'
+		},
+	
+		module: {
+			rules: [{
+				loaders: 'babel-loader',
+				test: /\.js$/,
+				exclude: /node_modules/
+			}, {
+				test: /\.s?css$/,
+				use: [
+					'style-loader',
+					'css-loader',
+					'sass-loader'
+				]
+			}]
+		},
+	
+		resolveLoader: {
+			modules: [
+			  'node_modules'
+			]
+		},
+	
+		devtool: isProduction ? 'source-map' : 'cheap-module-eval-source-map',
+		
+		devServer: {
+			contentBase: path.join(__dirname, 'public'),
+			historyApiFallback: true	
+		}
+	};
 };
