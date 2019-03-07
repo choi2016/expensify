@@ -7,17 +7,16 @@ exports[`should render ExpenseListItem correctly 1`] = `
     to="/edit/1"
   >
     <h3>
-      Description: 
       GUM
     </h3>
   </Link>
   <p>
     Amount: 
-    24
+    $0.24
   </p>
   <p>
     Created at: 
-    0
+    Dec 3rd, 1969
   </p>
 </div>
 `;
