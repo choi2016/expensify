@@ -100,6 +100,7 @@ exports[`should render ExpenseForm correctly 1`] = `
     className="text-area"
     onChange={[Function]}
     placeholder="Add a note for your expense (optional)"
+    value=""
   />
   <div>
     <button
@@ -211,6 +212,7 @@ exports[`should render ExpenseForm correctly with expense data 1`] = `
     className="text-area"
     onChange={[Function]}
     placeholder="Add a note for your expense (optional)"
+    value=""
   />
   <div>
     <button
@@ -322,6 +324,7 @@ exports[`should render error for invalid form submission 1`] = `
     className="text-area"
     onChange={[Function]}
     placeholder="Add a note for your expense (optional)"
+    value=""
   />
   <div>
     <button
@@ -438,6 +441,7 @@ exports[`should render error for invalid form submission 2`] = `
     className="text-area"
     onChange={[Function]}
     placeholder="Add a note for your expense (optional)"
+    value=""
   />
   <div>
     <button
